@@ -23,8 +23,8 @@ public class GlobalInterceptorTest {
 				.addClasses(ProxyTestInterceptor.class,
 						ProxyTestExtension.class, ProxyTestInterface.class, LoggerProducer.class)
 				.addAsManifestResource(
-						"META-INF\\services\\javax.enterprise.inject.spi.Extension",
-						"META-INF\\services\\javax.enterprise.inject.spi.Extension")
+						"javax.enterprise.inject.spi.Extension",
+						"services\\javax.enterprise.inject.spi.Extension")
 				.addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
 	}
 
